@@ -1,3 +1,4 @@
+
 package com.company;
 
 import java.util.Random;
@@ -5,8 +6,8 @@ import java.util.Random;
 public class Dado {
     //inicia todos os dados zerados
     public Dado(){
-        tam = 0;
-        valor = 0;
+        tam =0;
+        valor=0;
     }
 
     //para inserir o valor maximo do dado
@@ -18,6 +19,7 @@ public class Dado {
     public void setValor(){
         Random bot = new Random();
         valor =  bot.nextInt(tam);
+        valor = valor +1;
     }
 
     //pega o valor dado anteriormente para jogar
